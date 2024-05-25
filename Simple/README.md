@@ -8,4 +8,4 @@ Note: This code uses the `Scanner` class to get user input and the `switch` stat
 - copy the [codes](Calculator.java)
   - [here](https://www.programiz.com/java-programming/online-compiler/)  you need to `clear the default HelloWorld codes`.
   - Paste the [codes](Calculator.java) there.
-  - Tap the `run` button (or press the play `âˆ†` button.
+  - Tap the `run` button (or press the play `∆` button.
