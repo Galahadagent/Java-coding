@@ -11,4 +11,4 @@ Note: This code uses the `Scanner` class to get user input and the `switch` stat
   - Tap the `run` button (or press the [play `∆` button.
 
 # alert ⚠️ 
-When you are done using this java coding then definitely close the [site](https://www.programiz.com/java-programming/online-compiler/) and `clear your (i mean this [site](https://www.programiz.com/java-programming/online-compiler/) ) browsing data` or `history`.
+When you are done using this java coding then definitely close the [site](https://www.programiz.com/java-programming/online-compiler/) and `clear your` (i mean this [site](https://www.programiz.com/java-programming/online-compiler/) ) `browsing data` or `history`.
