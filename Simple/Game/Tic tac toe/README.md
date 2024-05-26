@@ -2,7 +2,7 @@ This code creates a simple command-line Tic Tac Toe game. Players take turns ent
 
 
 ## to use (run) this codes
-- copy the [code](Tictactoe.java) or [code.md](Tictactoe.md)
+- copy the [codes](Tic-tac-toe.java) or [code.md](Tictactoe.md)
   - [here](https://www.programiz.com/java-programming/online-compiler/)  you need to `clear the default HelloWorld codes`.
   - Paste the [codes](Tic tac toe.java) or [codes.md](Tic tac toe.md) there.
   - Tap the `run` button (or press the play `∆` button).
