@@ -48,7 +48,6 @@ public class TicTacToe {
     return false;
     }
 
-
     public boolean isBoardFull() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -66,20 +65,21 @@ public class TicTacToe {
         int row, col;
 
         while (true) {
+        game.printBoard();
+        System.out.println("Player " + game.currentPlayer + "'s turn. Enter row and column:");
+        row = scanner.nextInt();
+        col = scanner.nextInt();
+        game.makeMove(row, col);
+        if (game.isWinner()) {
             game.printBoard();
-            System.out.println("Player " + game.currentPlayer + "'s turn. Enter row and column:");
-            row = scanner.nextInt();
-            col = scanner.nextInt();
-            game.makeMove(row, col);
-            if (game.isWinner()) {
-                game.printBoard();
-                System.out.println("Player " + game.currentPlayer + " wins!");
-                break;
-            } else if (game.isBoardFull()) {
-                game.printBoard();
-                System.out.println("It's a draw!");
-                break;
+            System.out.println("Player " + ((game.currentPlayer == 'X') ? 'O' : 'X') + " wins!");
+            break;
+        } else if (game.isBoardFull()) {
+            game.printBoard();
+            System.out.println("It's a draw!");
+            break;
+        }
+        game.currentPlayer = (game.currentPlayer == 'X') ? 'O' : 'X';
             }
         }
     }
-}
