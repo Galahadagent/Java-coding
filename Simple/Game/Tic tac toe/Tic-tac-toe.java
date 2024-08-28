@@ -31,19 +31,20 @@ public class TicTacToe {
     }
 
     public boolean isWinner() {
+    char winner = (currentPlayer == 'X') ? 'O' : 'X'; // Get the previous player's mark
     // Check rows and columns for a winner
     for (int i = 0; i < 3; i++) {
-        if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ') {
+        if (board[i][0] == winner && board[i][1] == winner && board[i][2] == winner) {
             return true;
-            }
-        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[0][i] != ' ') {
+        }
+        if (board[0][i] == winner && board[1][i] == winner && board[2][i] == winner) {
             return true;
         }
     }
     // Check diagonals for a winner
-    if ((board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ') || (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ')) {
+    if ((board[0][0] == winner && board[1][1] == winner && board[2][2] == winner) || (board[0][2] == winner && board[1][1] == winner && board[2][0] == winner)) {
         return true;
-        }
+    }
     return false;
     }
 
